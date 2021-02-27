@@ -13,12 +13,15 @@ export default function Home({ posts }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
+      <main className="max-w-screen-md mx-auto">
         <Header />
-        <div className="posts">
-          {/* {posts.map((p) => {
-            return <Post key={p.date} date={p.date} image={p.image.fields} title={p.title} />
-          })} */}
+        <div className="pl-24">
+          <p className="text-gray-600 text-lg font-light">
+            Hi there my name is <a href="https://twitter.com/askour_hicham" className="font-bold text-black underline" target="_blank">@hichmaskour</a>, i'm a passionate front-end developer, i create awesome web pages.
+            <br />
+            <br />
+            I live in Marrakech / Morocco 🇲🇦. I can turn your designs into a dynamic web pages and applications . For more information, do not hesitate to contact me through my email: <a href="mailto:hishamaskour@gmail.com" className="font-bold text-black underline" target="_blank">hishamaskour@gmail.com</a> or <a href="https://www.linkedin.com/in/hichamaskour" className="font-bold text-black underline" target="_blank">my linkedin profile</a>
+          </p>
         </div>
       </main>
 
@@ -31,6 +34,8 @@ export default function Home({ posts }) {
           flex-direction: column;
           justify-content: center;
           align-items: center;
+          margin-left: auto;
+          margin-right: auto;
         }
 
         main {
@@ -38,12 +43,8 @@ export default function Home({ posts }) {
           flex: 1;
           display: flex;
           flex-direction: column;
-          justify-content: center;
+          justify-content: flex-start;
           align-items: center;
-        }
-
-        .posts {
-          display: flex;
         }
       `}</style>
 
