@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-import { fetchEntries } from '@utils/contentfulPosts'
+// import { fetchEntries } from '@utils/contentfulPosts'
 
 import Header from '@components/Header'
 import Footer from '@components/Footer'
@@ -66,11 +66,11 @@ export default function Home({ posts }) {
 }
 
 export async function getStaticProps() {
-  const res = await fetchEntries()
-  const posts = await res.map((p) => {
-    return p.fields
-  })
-
+  // const res = await fetchEntries()
+  // const posts = await res.map((p) => {
+  //   return p.fields
+  // })
+  const posts = [];
   return {
     props: {
       posts,
